@@ -24,7 +24,7 @@ export default function Form({onAddItem}) {
     <form className="form__add" onSubmit={handleSubmit}>
       <p className="form__header">Hari ini belanja apa kita?</p>
       <div className='form__content'>
-        <select className='form__jumlah-barang' value={qty} onChange={(e) => setQty(Number(e.target.value))}>
+        <select className='form__jumlah-barang' value={qty} onChange={(e) => setQty(Number(e.target.value))} aria-label='Pilih jumlah barang'>
           {quantityNum}
         </select>
         <input type="text" placeholder="nama barang..." className='form__input-barang' value={name} onChange={(e) => setName(e.target.value)}/>

@@ -31,7 +31,7 @@ export default function GroceryList({items, onDeleteItem, onCheckedItem, onClear
       </ul>
     </div>
     <div className="actions">
-      <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
+      <select value={sortBy} onChange={(e) => setSortBy(e.target.value)} aria-label='Urutkan barang'>
         <option value="input">Urutkan berdasarkan urutan input</option>
         <option value="name">Urutkan berdasarkan nama barang</option>
         <option value="checked">Urutkan berdasarkan ceklis</option>

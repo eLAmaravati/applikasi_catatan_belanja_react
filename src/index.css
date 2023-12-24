@@ -88,17 +88,24 @@ button {
   background-color: var(--dark-green);
   color: #fff;
   flex: 1;
+  transition: all 0.25s ease in out;
 }
 
 .button--solid:hover {
   background-color: var(--dark-green-hover);
   border-color: var(--dark-green-hover);
-  /* box-shadow: var(--box-shadow); */
 }
 
 .button--outline {
   background-color: transparent;
   border-color: var(--dark-green-hover);
+  border-width: 2px;
+  transition: all 0.25s ease in out;
+}
+
+.button--outline:hover {
+  background-color: var(--dark-green-hover);
+  color: #fff;
 }
 
 .button--delete {
@@ -245,7 +252,7 @@ button:focus-visible {
 
 .actions select {
   flex: 1;
-  background-color: var(--light-green);
+  background-color: #fff;
 }
 
 /* Stats */
